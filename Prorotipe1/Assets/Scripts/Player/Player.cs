@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public float jumpForce = 5.0f;
     public LayerMask groundLayer;
     public float groundCheckRadius = 1f;
+    public float attackRange = 0.5f;
     public Transform attackPoint;
 
 
@@ -29,7 +30,6 @@ public class Player : MonoBehaviour
     {
         Jump();
         CekisGrounded();
-        Attack();
         Flip();
         AnimationController();
     }
@@ -61,13 +61,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    void Attack()
-    {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            doAttack();
-        }
-    }
 
     private void Jump()
     {
@@ -90,9 +83,9 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void doAttack()
+    public void doAttack()//fungsi untuk menyerang dipanggil di animasi
     {
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, 0.5f);
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
         foreach (Collider2D enemy in hitEnemies)
         {
             if (enemy.CompareTag("Enemy"))
@@ -114,6 +107,7 @@ public class Player : MonoBehaviour
 
     void AnimationController()
     {
+        //Menatur animasi untuk berjala atau idle/////////////////////
         if (Input.GetAxis("Horizontal") != 0 && isGrounded == true)
         {
             //jika player bergerak, maka animasi player berjalan
@@ -126,6 +120,8 @@ public class Player : MonoBehaviour
             animator.SetBool("IsWalk", false);
             Debug.Log("Idle");
         }
+
+        //menatur animasi untuk melompat/////////////////////////
         if (isGrounded == true)
         {
             //jika player melompat, maka animasi player melompat
@@ -136,6 +132,13 @@ public class Player : MonoBehaviour
             //jika player tidak melompat, maka animasi player idle / berjalan
             animator.SetBool("IsJump", true);
         }
+
+        //menatur animasi untuk attack/////////////////////////
+        if (Input.GetButtonDown("Fire1"))
+        {
+            //jika player menyerang, maka animasi player attack
+            animator.SetTrigger("IsAttack");
+        }
     }
 
     private void OnDrawGizmos()
@@ -145,6 +148,6 @@ public class Player : MonoBehaviour
         Gizmos.DrawLine(transform.position, transform.position + Vector3.down * groundCheckRadius);
 
         //gizmo untuk attack point
-        Gizmos.DrawWireSphere(attackPoint.position, 0.5f);
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 }

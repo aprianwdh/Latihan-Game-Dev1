@@ -802,7 +802,7 @@ Transform:
   m_GameObject: {fileID: 584343257}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.18, y: -0.0029253706, z: 0}
+  m_LocalPosition: {x: -3.9, y: -0.0029253706, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1228,6 +1228,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   groundCheckRadius: 2
+  attackRange: 1.5
   attackPoint: {fileID: 732410504}
 --- !u!70 &1400688335
 CapsuleCollider2D:
@@ -1600,7 +1601,7 @@ Transform:
   m_GameObject: {fileID: 1796882827}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -3.46, y: -1.79, z: 0}
+  m_LocalPosition: {x: -7.4, y: -1.79, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children: []

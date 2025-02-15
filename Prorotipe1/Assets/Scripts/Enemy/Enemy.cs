@@ -16,11 +16,19 @@ public class Enemy : MonoBehaviour
         currentHealth -= damage;
         LeanTween.color(gameObject, Color.red, 0.2f)
         .setEase(LeanTweenType.easeInOutQuint)
-        .setOnComplete(() => LeanTween.color(gameObject, Color.black, 0.2f));
-        if (currentHealth <= 0)
+        .setOnComplete(() =>
         {
-            Die();
-        }
+            LeanTween.color(gameObject, Color.white, 0.2f)
+            .setEase(LeanTweenType.easeInOutQuint)
+            .setOnComplete(() =>
+            {
+                if (currentHealth <= 0)
+                {
+                    Die();
+                }
+            });
+        });
+
     }
 
     void Die()
