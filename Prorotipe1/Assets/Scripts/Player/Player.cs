@@ -6,23 +6,32 @@ public class Player : MonoBehaviour
     public float speed = 5.0f;
     public float jumpForce = 5.0f;
     public LayerMask groundLayer;
+    public float groundCheckRadius = 1f;
+    public Transform attackPoint;
+
 
     //private variable
     private Rigidbody2D rb;
     bool isGrounded = false;
     SpriteRenderer spriteRenderer;
+    private Animator animator;
+
 
     //fungsi yang dijalankan sekali saat game dimulai    
     void Start()
     {
          rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
         Jump();
         CekisGrounded();
+        Attack();
+        Flip();
+        AnimationController();
     }
 
     //fungsi yang dijalankan setiap frame
@@ -38,6 +47,28 @@ public class Player : MonoBehaviour
         rb.linearVelocity = new Vector2(InputX * speed, rb.linearVelocity.y);
     }
 
+    void Flip()
+    {
+        //jika player bergerak ke kiri, maka player akan dibalikkan
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+        //jika player bergerak ke kanan, maka player akan dibalikkan
+        else if (Input.GetAxis("Horizontal") > 0)
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+    }
+
+    void Attack()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            doAttack();
+        }
+    }
+
     private void Jump()
     {
         if (Input.GetButtonDown("Jump") && isGrounded == true)
@@ -48,7 +79,7 @@ public class Player : MonoBehaviour
 
     void CekisGrounded()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1.0f, groundLayer);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, groundCheckRadius, groundLayer);
         if (hit.collider != null)
         {
             isGrounded =  true;
@@ -56,6 +87,18 @@ public class Player : MonoBehaviour
         else
         {
             isGrounded = false;
+        }
+    }
+
+    public void doAttack()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, 0.5f);
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            if (enemy.CompareTag("Enemy"))
+            {
+                enemy.GetComponent<Enemy>().TakeDamage(1);
+            }
         }
     }
 
@@ -67,5 +110,41 @@ public class Player : MonoBehaviour
             .setEase(LeanTweenType.easeInOutQuint)
             .setOnComplete(() => LeanTween.color(gameObject,Color.white,0.2f));
 
+    }
+
+    void AnimationController()
+    {
+        if (Input.GetAxis("Horizontal") != 0 && isGrounded == true)
+        {
+            //jika player bergerak, maka animasi player berjalan
+            animator.SetBool("IsWalk", true);
+            Debug.Log("Walk");
+        }
+        else if (Input.GetAxis("Horizontal") == 0 && isGrounded == true)
+        {
+            //jika player tidak bergerak, maka animasi player idle
+            animator.SetBool("IsWalk", false);
+            Debug.Log("Idle");
+        }
+        if (isGrounded == true)
+        {
+            //jika player melompat, maka animasi player melompat
+            animator.SetBool("IsJump",false);
+        }
+        else if(isGrounded == false)
+        {
+            //jika player tidak melompat, maka animasi player idle / berjalan
+            animator.SetBool("IsJump", true);
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        //gizmo untuk chack ground
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(transform.position, transform.position + Vector3.down * groundCheckRadius);
+
+        //gizmo untuk attack point
+        Gizmos.DrawWireSphere(attackPoint.position, 0.5f);
     }
 }
