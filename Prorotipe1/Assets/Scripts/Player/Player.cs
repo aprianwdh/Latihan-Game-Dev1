@@ -112,13 +112,11 @@ public class Player : MonoBehaviour
         {
             //jika player bergerak, maka animasi player berjalan
             animator.SetBool("IsWalk", true);
-            Debug.Log("Walk");
         }
         else if (Input.GetAxis("Horizontal") == 0 && isGrounded == true)
         {
             //jika player tidak bergerak, maka animasi player idle
             animator.SetBool("IsWalk", false);
-            Debug.Log("Idle");
         }
 
         //menatur animasi untuk melompat/////////////////////////
