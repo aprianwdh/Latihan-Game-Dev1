@@ -4530,12 +4530,20 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4581695930199977120, guid: 648ef2550b871ca488b1761cb2bb022f, type: 3}
+      propertyPath: attackRange
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581695930199977120, guid: 648ef2550b871ca488b1761cb2bb022f, type: 3}
       propertyPath: patrolPoint1
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4581695930199977120, guid: 648ef2550b871ca488b1761cb2bb022f, type: 3}
       propertyPath: patrolPoint2
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581695930199977120, guid: 648ef2550b871ca488b1761cb2bb022f, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 4581695930199977120, guid: 648ef2550b871ca488b1761cb2bb022f, type: 3}
       propertyPath: patrolPoints.Array.size
@@ -8706,6 +8714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 661360840700820098, guid: 49bcc02bd3fe60647bc0a645a878e47a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4859804076097102544, guid: 49bcc02bd3fe60647bc0a645a878e47a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8744,6 +8756,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4859804076097102544, guid: 49bcc02bd3fe60647bc0a645a878e47a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318650336926792431, guid: 49bcc02bd3fe60647bc0a645a878e47a, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8470035146071703375, guid: 49bcc02bd3fe60647bc0a645a878e47a, type: 3}

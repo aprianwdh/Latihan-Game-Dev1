@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class HealthPotion : MonoBehaviour
 {
+    public int healthUp = 1;
+
     private GameManager gameManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,7 +15,7 @@ public class HealthPotion : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            gameManager.current_health++;
+            gameManager.current_health_player += healthUp;
             // Animasi: Gerakkan ke atas, lalu hilangkan
             LeanTween.scale(gameObject, Vector3.zero, 0.5f).setEase(LeanTweenType.easeInQuad).setOnComplete(() => Destroy(gameObject));
         }

@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Enemy.cs",
               "ToolTip": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Enemy\\Enemy.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\Enemy.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAcwBwAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAcwGEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T12:39:44.167Z",
               "EditorCaption": ""
@@ -99,8 +99,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Core\\GameManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T11:36:20.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T11:36:20.738Z"
             },
             {
               "$type": "Document",
@@ -124,8 +123,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAswHEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T11:52:06.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T11:52:06.956Z"
             }
           ]
         }

@@ -6,13 +6,16 @@ public class Enemy : MonoBehaviour
     public int maxHealth = 3;
     public float speed = 5.0f;
     public float chaseRange = 10.0f;
+    public float attackRange = 1.0f;
     public Transform Guardhouse;
+    public int damage = 1;
+    public LayerMask playerLayer;
 
 
     private int currentHealth;
     private Rigidbody2D rb;
     private bool isChase = false;
-    private Transform Targer;
+    private Transform Target;
     private Animator anim;
     private bool isWalk = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,13 +23,14 @@ public class Enemy : MonoBehaviour
     {
         currentHealth = maxHealth;
         rb = GetComponent<Rigidbody2D>();
-        Targer = GameObject.FindGameObjectWithTag("Player").transform;
+        Target = GameObject.FindGameObjectWithTag("Player").transform;
         anim = GetComponent<Animator>();
     }
 
     private void Update()
     {
         AnimationControler();
+        PlayerInRange();
     }
 
     private void FixedUpdate()
@@ -37,11 +41,11 @@ public class Enemy : MonoBehaviour
     void ChasePlayer()
     {
         //jika player berada dalam jarak chase
-        if (Vector2.Distance(transform.position, Targer.position) < chaseRange)
+        if (Vector2.Distance(transform.position, Target.position) < chaseRange)
         {
             isChase = true;
             isWalk = true;
-            if (Targer.position.x > transform.position.x)
+            if (Target.position.x > transform.position.x)
             {
                 rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
                 transform.eulerAngles = new Vector3(0, 180, 0);
@@ -88,7 +92,31 @@ public class Enemy : MonoBehaviour
                 // Jika sudah sampai, berhenti
                 rb.linearVelocity = Vector2.zero;
                 isWalk = false;
-                Debug.Log("Sudah sampai di Guardhouse");
+            }
+        }
+    }
+
+    void PlayerInRange()
+    {
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, attackRange, playerLayer);
+        if (hit != null)
+        {
+            Player player = hit.GetComponent<Player>();
+            if (player != null)
+            {
+                anim.SetTrigger("Attack");
+            }
+        }
+    }
+    public void Attack()
+    {
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, attackRange, playerLayer);
+        if (hit != null)
+        {
+            Player player = hit.GetComponent<Player>();
+            if (player != null)
+            {
+                player.TakeDamage(damage);
             }
         }
     }
@@ -128,5 +156,8 @@ public class Enemy : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, chaseRange);
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
