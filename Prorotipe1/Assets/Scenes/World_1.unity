@@ -4530,6 +4530,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4581695930199977120, guid: 648ef2550b871ca488b1761cb2bb022f, type: 3}
+      propertyPath: BloodEffect
+      value: 
+      objectReference: {fileID: 4795828707094450153, guid: 037c9046a677b3e4193afd2261fe982d, type: 3}
+    - target: {fileID: 4581695930199977120, guid: 648ef2550b871ca488b1761cb2bb022f, type: 3}
       propertyPath: attackRange
       value: 1.7
       objectReference: {fileID: 0}

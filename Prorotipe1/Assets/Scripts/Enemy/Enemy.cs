@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     public Transform Guardhouse;
     public int damage = 1;
     public LayerMask playerLayer;
+    public GameObject BloodEffect;
 
 
     private int currentHealth;
@@ -148,7 +149,9 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
+        anim.SetBool("isDie", true);
+        Instantiate(BloodEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject,0.5f);
     }
 
 
