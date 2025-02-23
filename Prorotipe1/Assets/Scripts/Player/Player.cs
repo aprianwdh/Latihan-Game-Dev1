@@ -9,6 +9,12 @@ public class Player : MonoBehaviour
     public float groundCheckRadius = 1f;
     public float attackRange = 0.5f;
     public Transform attackPoint;
+    public float dashTime = 0.1f;
+    public float dashColldown = 1.0f;
+    public float dashPower = 24f;
+    public bool isDashing = false;
+    public bool canDash = true;
+    public TrailRenderer trailRenderer;
 
 
     //private variable
@@ -24,10 +30,17 @@ public class Player : MonoBehaviour
          rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        //trailRenderer = GetComponent<TrailRenderer>();
     }
 
     private void Update()
     {
+        if (isDashing)
+        {
+            return;
+        }
+
+        Dashing();
         Jump();
         CekisGrounded();
         Flip();
@@ -37,6 +50,10 @@ public class Player : MonoBehaviour
     //fungsi yang dijalankan setiap frame
     private void FixedUpdate()
     {
+        if (isDashing)
+        {
+            return;
+        }
         MovePlayer();
     }
 
@@ -104,6 +121,44 @@ public class Player : MonoBehaviour
             .setOnComplete(() => LeanTween.color(gameObject,Color.white,0.2f));
 
     }
+
+    private void Dashing()
+    {
+        if (Input.GetButtonDown("Fire2") && canDash == true)
+        {
+            StartCoroutine(Dash());
+        }
+    }
+
+    IEnumerator Dash()
+    {
+        float InputX = Input.GetAxis("Horizontal");
+
+        canDash = false;
+        isDashing = true;
+        float OriginalGravity = rb.gravityScale;
+        rb.gravityScale = 0;
+        rb.linearVelocity = new Vector2(InputX * dashPower, 0f);
+        trailRenderer.emitting = true;
+
+        // Ubah layer agar tidak bertabrakan dengan musuh
+        gameObject.layer = LayerMask.NameToLayer("DashingPlayer");
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("DashingPlayer"), LayerMask.NameToLayer("Enemy"), true);
+
+        yield return new WaitForSeconds(dashTime);
+
+        // Kembalikan ke layer awal
+        gameObject.layer = LayerMask.NameToLayer("Player");
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("DashingPlayer"), LayerMask.NameToLayer("Enemy"), false);
+
+        trailRenderer.emitting = false;
+        isDashing = false;
+        rb.gravityScale = OriginalGravity;
+
+        yield return new WaitForSeconds(dashColldown);
+        canDash = true;
+    }
+
 
     void AnimationController()
     {
