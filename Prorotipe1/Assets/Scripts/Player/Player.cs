@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     public bool isDashing = false;
     public bool canDash = true;
     public TrailRenderer trailRenderer;
+    public GameObject checkPoint;
+    public GameObject BloodEffect;
 
 
     //private variable
@@ -22,6 +24,7 @@ public class Player : MonoBehaviour
     bool isGrounded = false;
     SpriteRenderer spriteRenderer;
     private Animator animator;
+    private bool died = false;
 
 
     //fungsi yang dijalankan sekali saat game dimulai    
@@ -114,12 +117,44 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damageAmount)
     {
+        if (died)
+        {
+            return;
+        }
         GameManager gameManager = FindAnyObjectByType<GameManager>();
         gameManager.current_health_player -= damageAmount;
         LeanTween.color(gameObject, Color.red, 0.2f)
             .setEase(LeanTweenType.easeInOutQuint)
             .setOnComplete(() => LeanTween.color(gameObject,Color.white,0.2f));
+        Die();
 
+    }
+
+    void Die()
+    {
+        GameManager gameManager = FindAnyObjectByType<GameManager>();
+
+        if (gameManager.current_health_player <= 0)
+        {
+            died = true;
+            Instantiate(BloodEffect, transform.position, Quaternion.identity);
+            StartCoroutine(Respawn(0.5f));
+            gameManager.current_health_player = 3;
+            died = false;
+        }
+    }
+
+    IEnumerator Respawn(float TimeRespawn)
+    {
+        yield return new WaitForSeconds(TimeRespawn);
+        if (checkPoint != null)
+        {
+            transform.position = checkPoint.transform.position;
+        }
+        else
+        {
+            transform.position = new Vector3(0, 0, 0);
+        }
     }
 
     private void Dashing()
