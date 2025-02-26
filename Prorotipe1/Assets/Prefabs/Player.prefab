@@ -177,12 +177,14 @@ MonoBehaviour:
   groundCheckRadius: 2
   attackRange: 1.5
   attackPoint: {fileID: 4026486314404684979}
-  dashTime: 0.1
+  dashTime: 0.2
   dashColldown: 1
-  dashPower: 24
+  dashPower: 28
   isDashing: 0
   canDash: 1
   trailRenderer: {fileID: 2596400262134828157}
+  checkPoint: {fileID: 0}
+  BloodEffect: {fileID: 4795828707094450153, guid: 037c9046a677b3e4193afd2261fe982d, type: 3}
 --- !u!95 &3946508247419150
 Animator:
   serializedVersion: 7
@@ -229,7 +231,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9756876467e98da48b3553287c347409, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

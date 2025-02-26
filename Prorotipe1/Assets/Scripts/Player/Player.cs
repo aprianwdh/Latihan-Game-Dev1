@@ -159,7 +159,7 @@ public class Player : MonoBehaviour
 
     private void Dashing()
     {
-        if (Input.GetButtonDown("Fire2") && canDash == true)
+        if ((Input.GetButtonDown("Fire2") || Input.GetMouseButtonDown(1))&& canDash == true)
         {
             StartCoroutine(Dash());
         }

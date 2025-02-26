@@ -115,20 +115,20 @@ TextureImporter:
       name: flag animation_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 1
-        width: 34
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 5
+        y: 2
+        width: 32
+        height: 50
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: beba87481285ed5a0800000000000000
-      internalID: -6494656711642010645
+      spriteID: 55bbb2c9a059270428eb118f3e4fa932
+      internalID: -1668311014
       vertices: []
       indices: 
       edges: []
@@ -137,20 +137,20 @@ TextureImporter:
       name: flag animation_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1
-        width: 32
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 65
+        y: 2
+        width: 30
+        height: 50
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: be292f6a22de0c3c0800000000000000
-      internalID: -4341209307699571989
+      spriteID: fb405f7c37090e347b946830c20de8ee
+      internalID: 843459879
       vertices: []
       indices: 
       edges: []
@@ -159,20 +159,20 @@ TextureImporter:
       name: flag animation_2
       rect:
         serializedVersion: 2
-        x: 124
-        y: 1
-        width: 33
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 125
+        y: 2
+        width: 31
+        height: 50
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 373464493e4203040800000000000000
-      internalID: 4625237377173308275
+      spriteID: 2919cc212d5328248b0ff9c88b74880f
+      internalID: -2045986344
       vertices: []
       indices: 
       edges: []
@@ -181,20 +181,20 @@ TextureImporter:
       name: flag animation_3
       rect:
         serializedVersion: 2
-        x: 184
-        y: 1
-        width: 34
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 185
+        y: 2
+        width: 32
+        height: 50
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7f74cef2e1e4da9f0800000000000000
-      internalID: -455622095734552585
+      spriteID: 8aad5570022374243ba6328d4f290be0
+      internalID: -1934559349
       vertices: []
       indices: 
       edges: []
@@ -203,20 +203,20 @@ TextureImporter:
       name: flag animation_4
       rect:
         serializedVersion: 2
-        x: 244
-        y: 1
-        width: 32
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 245
+        y: 2
+        width: 30
+        height: 50
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a255780f49a582d50800000000000000
-      internalID: 6712714840332784938
+      spriteID: 4821ae0b87314f24b8c3328b76739593
+      internalID: 286084364
       vertices: []
       indices: 
       edges: []
@@ -235,11 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flag animation_0: -6494656711642010645
-      flag animation_1: -4341209307699571989
-      flag animation_2: 4625237377173308275
-      flag animation_3: -455622095734552585
-      flag animation_4: 6712714840332784938
+      flag animation_0: -1668311014
+      flag animation_1: 843459879
+      flag animation_2: -2045986344
+      flag animation_3: -1934559349
+      flag animation_4: 286084364
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
