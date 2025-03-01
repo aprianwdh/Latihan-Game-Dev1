@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     public TrailRenderer trailRenderer;
     public GameObject checkPoint;
     public GameObject BloodEffect;
+    public GameObject interactIcon;
 
 
     //private variable
@@ -43,6 +44,7 @@ public class Player : MonoBehaviour
             return;
         }
 
+        ifInteract();
         Dashing();
         Jump();
         CekisGrounded();
@@ -192,6 +194,18 @@ public class Player : MonoBehaviour
 
         yield return new WaitForSeconds(dashColldown);
         canDash = true;
+    }
+
+    void ifInteract()
+    {
+        if (FindAnyObjectByType<GameManager>().interactable)
+        {
+            interactIcon.SetActive(true);
+        }
+        else
+        {
+            interactIcon.SetActive(false);
+        }
     }
 
 
