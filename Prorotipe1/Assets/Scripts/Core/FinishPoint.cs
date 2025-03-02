@@ -15,7 +15,7 @@ public class FinishPoint : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Debug.Log("Level complete!");
-            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+            GameManager.instance.NextSceen();
         }
     }
 }
