@@ -1,16 +1,19 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+
 public class GameManager : MonoBehaviour
 {
-    //untuk menyimpan data
+    // Untuk menyimpan data
     public int current_coin_count = 0;
     public int current_health_player = 3;
     public bool interactable = false;
 
-    //untuk sceen manager
+    // Singleton instance
     public static GameManager instance;
-    [SerializeField] Animator transition;
+
+    [SerializeField] private Animator transition;
+
     private void Awake()
     {
         if (instance == null)
@@ -29,16 +32,50 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void NextSceen()
+    public void NextScene(int buildIndex)
     {
-        StartCoroutine(LoadSceen());
+        StartCoroutine(LoadScene(buildIndex));
     }
 
-    IEnumerator LoadSceen()
+    private IEnumerator LoadScene(int buildIndex)
     {
-        transition.SetTrigger("GameEnd");
+        if (transition != null)
+        {
+            transition.SetTrigger("GameEnd");
+        }
+
         yield return new WaitForSeconds(1);
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        transition.SetTrigger("GameStart");
+
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(buildIndex);
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(0.5f); // Tambahan delay agar transisi lebih smooth
+
+        if (transition != null)
+        {
+            transition.SetTrigger("GameStart");
+        }
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Cari ulang Animator jika hilang saat scene berganti
+        if (transition == null)
+        {
+            transition = FindAnyObjectByType<Animator>();
+        }
     }
 }

@@ -8,7 +8,7 @@ public class HealthPotion : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        gameManager = FindAnyObjectByType<GameManager>();
+        gameManager = GameManager.instance;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

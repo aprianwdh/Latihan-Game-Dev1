@@ -123,7 +123,7 @@ public class Player : MonoBehaviour
         {
             return;
         }
-        GameManager gameManager = FindAnyObjectByType<GameManager>();
+        GameManager gameManager = GameManager.instance;
         gameManager.current_health_player -= damageAmount;
         LeanTween.color(gameObject, Color.red, 0.2f)
             .setEase(LeanTweenType.easeInOutQuint)
@@ -134,7 +134,7 @@ public class Player : MonoBehaviour
 
     void Die()
     {
-        GameManager gameManager = FindAnyObjectByType<GameManager>();
+        GameManager gameManager = GameManager.instance;
 
         if (gameManager.current_health_player <= 0)
         {
@@ -198,7 +198,7 @@ public class Player : MonoBehaviour
 
     void ifInteract()
     {
-        if (FindAnyObjectByType<GameManager>().interactable)
+        if (GameManager.instance.interactable)
         {
             interactIcon.SetActive(true);
         }

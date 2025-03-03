@@ -7,7 +7,7 @@ public class FinishPoint : MonoBehaviour
 
     private void Start()
     {
-        gameManager = FindAnyObjectByType<GameManager>();
+        gameManager = GameManager.instance;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -15,7 +15,7 @@ public class FinishPoint : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Debug.Log("Level complete!");
-            GameManager.instance.NextSceen();
+            GameManager.instance.NextScene(1);
         }
     }
 }

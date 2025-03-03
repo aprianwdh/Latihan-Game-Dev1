@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 public class InteractTest : MonoBehaviour
 {
     private GameManager gameManager;
+    public int sceenIndex = 0;
 
     private void Start()
     {
-        gameManager = FindAnyObjectByType<GameManager>();
+        gameManager = GameManager.instance;
 
         if (gameManager == null)
         {
@@ -45,7 +46,7 @@ public class InteractTest : MonoBehaviour
 
     public void Interact()
     {
-        Debug.Log("Interacted with " + gameObject.name);
-        GameManager.instance.NextSceen();
+        Debug.Log("Move to sceen " + sceenIndex);
+        GameManager.instance.NextScene(sceenIndex);
     }
 }
