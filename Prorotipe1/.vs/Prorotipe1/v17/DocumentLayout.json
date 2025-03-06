@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|d:\\gamedev(unity)\\latihan-game-dev1\\prorotipe1\\assets\\scripts\\interactable event\\interacttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactable event\\interacttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|d:\\gamedev(unity)\\latihan-game-dev1\\prorotipe1\\assets\\scripts\\interactable event\\interacttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactable event\\interacttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\assets\\scripts\\core\\finishpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "InteractTest.cs",
               "DocumentMoniker": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Interactable event\\InteractTest.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Interactable event\\InteractTest.cs",
@@ -75,8 +75,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Items\\Checkpoint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T12:06:54.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T12:06:54.066Z"
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Effect\\Blood\\Blood.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T12:15:29.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T12:15:29.937Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\Enemy.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T12:39:44.167Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T12:39:44.167Z"
             },
             {
               "$type": "Document",
@@ -114,8 +111,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Core\\FinishPoint.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAIA/wBEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T12:06:14.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T12:06:14.511Z"
             },
             {
               "$type": "Document",
@@ -127,8 +123,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Colectible\\HealthPotion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T11:56:16.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T11:56:16.068Z"
             },
             {
               "$type": "Document",
@@ -140,18 +135,17 @@
               "RelativeToolTip": "Assets\\Scripts\\Enemy_or_Obstacle\\Spike.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T12:13:30.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T12:13:30.74Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Core\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\GameManager.cs",
               "ToolTip": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Core\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\GameManager.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAIwCIAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwA4AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-12T11:36:20.738Z",
               "EditorCaption": ""
@@ -178,8 +172,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
               "ViewState": "AgIAAO8AAAAAAAAAAAAswPkAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T11:52:06.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T11:52:06.956Z"
             }
           ]
         }

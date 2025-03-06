@@ -11,32 +11,32 @@
       "RelativeMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\assets\\scripts\\items\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\items\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\assets\\scripts\\core\\finishpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\finishpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\assets\\scripts\\colectible\\healthpotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\colectible\\healthpotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\assets\\scripts\\items\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\items\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\assets\\scripts\\effect\\blood\\blood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\effect\\blood\\blood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\assets\\scripts\\colectible\\healthpotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\colectible\\healthpotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\assets\\scripts\\enemy_or_obstacle\\spike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_or_obstacle\\spike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A0A3110-42A0-5B0F-CE14-D2C0502414E2}|Assembly-CSharp.csproj|D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\assets\\scripts\\colectible\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -60,14 +60,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Interactable event\\InteractTest.cs",
               "ToolTip": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Interactable event\\InteractTest.cs",
               "RelativeToolTip": "Assets\\Scripts\\Interactable event\\InteractTest.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwCkAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-01T04:18:23.791Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Checkpoint.cs",
               "DocumentMoniker": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Items\\Checkpoint.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Items\\Checkpoint.cs",
@@ -80,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Blood.cs",
               "DocumentMoniker": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Effect\\Blood\\Blood.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\Blood\\Blood.cs",
@@ -88,48 +88,51 @@
               "RelativeToolTip": "Assets\\Scripts\\Effect\\Blood\\Blood.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T12:15:29.937Z"
+              "WhenOpened": "2025-02-22T12:15:29.937Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Enemy.cs",
               "DocumentMoniker": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Enemy\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Enemy.cs",
               "ToolTip": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Enemy\\Enemy.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\Enemy.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAqwJkAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T12:39:44.167Z"
+              "WhenOpened": "2025-02-14T12:39:44.167Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "FinishPoint.cs",
               "DocumentMoniker": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Core\\FinishPoint.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\FinishPoint.cs",
               "ToolTip": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Core\\FinishPoint.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\FinishPoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIA/wBEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T12:06:14.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "HealthPotion.cs",
               "DocumentMoniker": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Colectible\\HealthPotion.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Colectible\\HealthPotion.cs",
               "ToolTip": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Colectible\\HealthPotion.cs",
               "RelativeToolTip": "Assets\\Scripts\\Colectible\\HealthPotion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T11:56:16.068Z"
+              "WhenOpened": "2025-02-13T11:56:16.068Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Spike.cs",
               "DocumentMoniker": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Enemy_or_Obstacle\\Spike.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_or_Obstacle\\Spike.cs",
@@ -137,7 +140,8 @@
               "RelativeToolTip": "Assets\\Scripts\\Enemy_or_Obstacle\\Spike.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T12:13:30.74Z"
+              "WhenOpened": "2025-02-12T12:13:30.74Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -147,7 +151,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\GameManager.cs",
               "ToolTip": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Core\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\GameManager.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwB0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwCIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-12T11:36:20.738Z",
               "EditorCaption": ""
@@ -166,13 +170,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
               "ToolTip": "D:\\GameDev(unity)\\Latihan-Game-Dev1\\Prorotipe1\\Assets\\Scripts\\Player\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAswPkAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T11:52:06.956Z",
               "EditorCaption": ""

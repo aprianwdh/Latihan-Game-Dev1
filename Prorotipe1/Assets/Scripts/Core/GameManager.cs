@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private Animator transition;
 
+   
     private void Awake()
     {
         if (instance == null)

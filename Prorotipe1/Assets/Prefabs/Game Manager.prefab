@@ -280,3 +280,4 @@ MonoBehaviour:
   current_coin_count: 0
   current_health_player: 3
   interactable: 0
+  transition: {fileID: 2901207277985809254}
