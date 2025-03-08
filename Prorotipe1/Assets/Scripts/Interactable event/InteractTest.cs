@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 public class InteractTest : MonoBehaviour
 {
     private GameManager gameManager;
+    private Player player;
     public int sceenIndex = 0;
 
     private void Start()
     {
         gameManager = GameManager.instance;
+        player = FindAnyObjectByType<Player>();
 
         if (gameManager == null)
         {
@@ -24,7 +26,13 @@ public class InteractTest : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Interact();
+                if (SceneManager.GetActiveScene().buildIndex == 0)
+                {
+                    gameManager.player_last_position = player.transform.position;
+                    Debug.Log("Player last position saved");
+                }
             }
+
         }
     }
 

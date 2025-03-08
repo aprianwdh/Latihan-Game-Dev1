@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     //public variable
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour
     public GameObject checkPoint;
     public GameObject BloodEffect;
     public GameObject interactIcon;
+    //public GameObject Interact_Position;
 
 
     //private variable
@@ -26,16 +28,37 @@ public class Player : MonoBehaviour
     SpriteRenderer spriteRenderer;
     private Animator animator;
     private bool died = false;
+    private GameManager gameManager;
 
 
     //fungsi yang dijalankan sekali saat game dimulai    
     void Start()
     {
-         rb = GetComponent<Rigidbody2D>();
+        gameManager = GameManager.instance;
+        rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        //trailRenderer = GetComponent<TrailRenderer>();
+
+        // Pastikan gameManager tidak null untuk menghindari NullReferenceException
+        if (gameManager != null && SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            // Pastikan player_last_position tidak null sebelum mengaksesnya
+            if (gameManager.player_last_position != null)
+            {
+                Debug.Log("Player last position is not null");
+                transform.position = gameManager.player_last_position;
+
+                // Setelah posisi dipulihkan, reset player_last_position ke null
+                //gameManager.player_last_position = null;
+            }
+            Debug.Log("Player last position is null");
+        }
+        else
+        {
+            Debug.LogWarning("GameManager belum diinisialisasi atau scene bukan index 0.");
+        }
     }
+
 
     private void Update()
     {
